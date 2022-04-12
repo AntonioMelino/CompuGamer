@@ -23,18 +23,18 @@ if (precios == 1) {
     var precios1 = prompt("Presione 1 para INTEL I9 o 2 para RYZEN 9")
 }
 if (precios1 == 1) {
-    alert("INTEL I9: $150.000")
+    alert("INTEL I9: $150.000 SIN IVA")
 }
 else if (precios1 == 2) {
-    alert("RYZEN 9: $115.000")
+    alert("RYZEN 9: $115.000 SIN IVA")
 }
 
 else if (precios == 2) {
-    alert("GEFORCE RTX 3090: $400.000")
+    alert("GEFORCE RTX 3090: $400.000 SIN IVA")
 }
 
 else if (precios == 3) {
-    alert("CORSAIR 16GB: $45.000")
+    alert("CORSAIR 16GB: $45.000 SIN IVA")
 }
 else {
     alert("No ha ingresado ninguna opcion, intente nuevamente")
@@ -51,3 +51,26 @@ if (puntuacion < 6) {
 else {
     alert("Muchas gracias vuelva pronto!")
 }
+
+class componentes {
+    constructor(nombre, precio){
+        this.nombre = nombre.toUpperCase()
+        this.precio = parseFloat(precio)
+        this.sold = false
+    }
+
+    addIVA(){
+        this.precio = this.precio * 1.21
+    }
+}
+
+const productos = []
+
+productos.push(new componentes("Intel I9", 150000))
+productos.push(new componentes("Ryzen 9", 115000))
+productos.push(new componentes("Geforce RTX 3090", 400000))
+productos.push(new componentes("Corsair 16GB", 45000))
+
+for(const product of productos) product.addIVA()
+
+console.log(productos)
