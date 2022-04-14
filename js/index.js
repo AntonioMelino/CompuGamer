@@ -73,4 +73,45 @@ productos.push(new componentes("Corsair 16GB", 45000))
 
 for(const product of productos) product.addIVA()
 
-console.log(productos)
+console.log("Productos y sus precios",productos)
+
+const productos2 = [
+    {name: "Intel I9", precio: 150000},
+    {name: "Ryzen 9", precio: 115000},
+    {name: "Geforce RTX 3090", precio: 400000},
+    {name: "Corsair 16GB", precio: 45000},
+]
+
+const resultado = productos2.filter ( c => c.name.includes("Intel"))
+const resultado2 = productos2.filter ( c => c.name.includes("Ryzen"))
+
+console.log("Solo Intel",resultado)
+console.log("Solo AMD-Ryzen",resultado2)
+
+const caros = productos2.filter ( c => c.precio > 100000)
+const baratos = productos2.filter ( c => c.precio <= 100000)
+
+console.log("Caros", caros)
+console.log("Baratos", baratos)
+
+const nombres = productos2.map( c => c.name)
+console.log("Nombres",nombres)
+
+const productos3 = [
+    {id: 1, producto: "Intel I9", precio: 150000},
+    {id: 2, producto: "Ryzen 9", precio: 115000},
+    {id: 3, producto: "Geforce RTX 3090", precio: 400000},
+    {id: 4, producto: "Corsair 16GB", precio: 45000},
+]
+
+const buscar1 = productos3.find(p => p.id === 1)
+console.log("Buscar Intel I9", buscar1)
+
+const buscar2 = productos3.find(p => p.id === 2)
+console.log("Buscar Ryzen 9", buscar2)
+
+const buscar3 = productos3.find(p => p.id === 3)
+console.log("Buscar Geforce RTX 3090", buscar3)
+
+const buscar4 = productos3.find(p => p.id === 4)
+console.log("Buscar Corsair 16GB", buscar4)
