@@ -93,80 +93,3 @@ button:hover::after {
   100% {
     clip-path: var(--slice-1);
     transform: translate(0); } }
-
-.container {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "buscadorYtitulo buscadorYtitulo buscadorYtitulo buscadorYtitulo" "aside cuerpoPrincipal cuerpoPrincipal cuerpoPrincipal" "aside cuerpoPrincipal cuerpoPrincipal cuerpoPrincipal" "aside cuerpoPrincipal cuerpoPrincipal cuerpoPrincipal";
-  border: solid black; }
-
-.buscadorYtitulo {
-  grid-area: buscadorYtitulo;
-  border: solid black; }
-
-.aside {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "categorias categorias categorias" "rangoPrecios rangoPrecios rangoPrecios" ". . .";
-  grid-area: aside;
-  border: solid black; }
-
-.categorias {
-  grid-area: categorias;
-  border: solid black; }
-
-.rangoPrecios {
-  grid-area: rangoPrecios;
-  border: solid black; }
-
-.cuerpoPrincipal {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 5px 5px;
-  grid-auto-flow: row;
-  grid-template-areas: "producto1 producto2 producto3" "producto4 producto5 producto6" "producto7 producto8 producto9";
-  grid-area: cuerpoPrincipal;
-  border: solid black; }
-
-.producto1 {
-  grid-area: producto1;
-  border: solid black; }
-
-.producto2 {
-  grid-area: producto2;
-  border: solid black; }
-
-.producto3 {
-  grid-area: producto3;
-  border: solid black; }
-
-.producto4 {
-  grid-area: producto4;
-  border: solid black; }
-
-.producto5 {
-  grid-area: producto5;
-  border: solid black; }
-
-.producto6 {
-  grid-area: producto6;
-  border: solid black; }
-
-.producto7 {
-  grid-area: producto7;
-  border: solid black; }
-
-.producto8 {
-  grid-area: producto8;
-  border: solid black; }
-
-.producto9 {
-  grid-area: producto9;
-  border: solid black; }

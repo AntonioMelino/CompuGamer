@@ -115,3 +115,4 @@ console.log("Buscar Geforce RTX 3090", buscar3)
 
 const buscar4 = productos3.find(p => p.id === 4)
 console.log("Buscar Corsair 16GB", buscar4)
+

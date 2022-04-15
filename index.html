@@ -33,7 +33,7 @@
     <nav class="navbar fixed-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><i class="fa-solid fa-dragon"></i>Compu Gamer</a>
-        <a class="navbar-brand" href="#"><i></i>Productos</a>
+        <a class="navbar-brand" href="html/productos.html"><i></i>Productos</a>
         <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i>Carrito</a>
       </div>
     </nav>
@@ -41,88 +41,118 @@
   </header>
 
 
+
+  <article>
+    <section>
+
+      <form>
+        <input type="search" placeholder="Buscar por nombre">
+        <button type="submit">Buscar</button>
+      </form>
+      <h2>Productos destacados</h2>
+
+
+      <aside>
+        <h3>Categorías</h3>
+
+        <h3>Rango de precios</h3>
+      </aside>
+
+
+    </section>
+  </article>
+
+
+
   <div class="container">
-    <article>
-      <section>
-
-
-        <div class="buscadorYtitulo">
-          <form>
-            <input type="search" placeholder="Buscar por nombre">
-            <button type="submit">Buscar</button>
-          </form>
-          <h2>Productos destacados</h2>
-        </div>
-
-
-        <div class="aside">
-          <aside>
-            <div class="categorias">
-            <h3>Categorías</h3>
-          </div>
-          <div class="rangoPrecios">
-            <h3>Rango de precios</h3>
-          </div>
-          </aside>
-        </div>
-
-
-        <div class="cuerpoPrincipal">
-          <div class="producto1">
-            <p>INTEL I9</p>
-            <img src="images/intel_i9.png" alt="" width="300">
-            <a>LO QUIERO</a>
-            <p>Precio</p>
-          </div>
-
-
-          <div class="producto2">
-            <p>RYZEN 9</p>
-            <img src="images/Ryzen9.png" alt="" width="300">
-            <a>LO QUIERO</a>
-            <p>Precio</p>
-          </div>
-
-
-          <div class="producto3">
-            <p>GEFORCE RTX 3090</p>
-            <img src="images/GEFORCERTX3090.png" alt="" width="300">
-            <a>LO QUIERO</a>
-            <p>Precio</p>
-          </div>
-
-
-          <div class="producto4">
-            <p>MEMORIA RAM CORSAIR 16GB</p>
-            <img src="images/RAM_CORSAIR.png" alt="" width="300">
-            <a>LO QUIERO</a>
-            <p>Precio</p>
-          </div>
-        </div>
-
-
-      </section>
-    </article>
+    <div id="catalogo" class="row"></div>
+    <hr>
+    <div id="carrito"></div>
   </div>
 
-
-
-
+  <!-- FOOTER -->
 
   <footer>
-    <p>Seguinos en nuestras redes sociales</p>
-    <a href="">Twitter</a>
-    <a href="">Instagram</a>
-    <a href="">Facebook</a>
-    <a href="">Linkedin</a>
-    <h6>Copyright - Todos los derechos reservados</h6>
+    <div class="container-fluid">
+
+      <div class="row p-2 bg-dark text-white">
+
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h3">CompuGamer</p>
+          <p class="text-secondary">#1 en ventas en Argentina</p>
+        </div>
+
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h5 mb-3">Preguntas frecuentes</p>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">¿Cómo comprar?</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Envíos</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Nosotros</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Contáctenos</a>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h5 mb-3">Otros</p>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Términos & condiciones</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Politica de privacidad</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Politicas de garantía</a>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h5 mb-3">Seguinos en</p>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-xs-12 pt-4">
+          <p class="text-white text-center">Copyright - Todos los derechos reservados © 2022</p>
+        </div>
+
+      </div>
+
+    </div>
   </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 
   <script src="js/index.js"></script>
+  <script src="js/carrito.js"></script>
 
-  <!-- LINK FOTN AWESOME ICONOS -->
+  <!-- LINK FONT AWESOME ICONOS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
     integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
