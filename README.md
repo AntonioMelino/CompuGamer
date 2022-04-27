@@ -1,6 +1,6 @@
 # COMPU GAMER
 Pagina web de venta de componentes para PC
 
-##LINK
+## LINK
 
 URL: https://antoniomelino.github.io/CompuGamer/
