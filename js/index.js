@@ -1,4 +1,4 @@
-alert("Bienvenido a CompuGamer, página aún en desarrollo")
+/*alert("Bienvenido a CompuGamer, página aún en desarrollo")
 
 let buscar = prompt("¿Qué está buscando?, presione 1 por microprocesadores, 2 por placas de video o 3 por memorias ram")
 
@@ -50,7 +50,7 @@ if (puntuacion < 6) {
 
 else {
     alert("Muchas gracias vuelva pronto!")
-}
+}*/
 
 class componentes {
     constructor(nombre, precio){
