@@ -18,10 +18,13 @@ for (const product of productos5) {
             <p>$ ${product.precio}</p>
             <img src='${product.img}' height= '350px'/>
             <button class= 'btnAddCart' id='product-${product.id}'>Agregar al carrito</button>
+            <button class= 'btnRemoveCart' id='product-${product.id}'>Remover del carrito</button>
         </div>
     `
 }
 document.getElementById('catalogo').innerHTML= htmlCatalogo
+
+//ADD TO CART//
 
 const btns = document.getElementsByClassName('btnAddCart')
 for (const btn of btns){
@@ -34,7 +37,38 @@ function addToCart(e){
     
     const product = productos5.find(p => p.id ==id)
     console.log('Agregando producto', product)
+
+    Toastify({
+        text: `${product.nombre} agregado!`,
+        className: "info",
+        duration: 2000,
+      }).showToast();
 }
+
+//REMOVE TO CART//
+
+const btnss = document.getElementsByClassName('btnRemoveCart')
+for (const btn of btnss){
+    btn.onclick= RemoveCart
+}
+
+function RemoveCart(e){
+    const btn = e.target
+    const id = btn.id.split('-')[1]
+    
+    const product = productos5.find(p => p.id ==id)
+    console.log('Removiendo producto', product)
+
+    Toastify({
+        text: `${product.nombre} removido!`,
+        className: "error",
+        duration: 2000,
+      }).showToast();
+}
+
+
+
+//STORAGE//
 
 const guardarLocal = (key, value) => {
     localStorage. setItem(key, value)
