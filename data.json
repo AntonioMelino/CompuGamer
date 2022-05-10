@@ -1,0 +1,9 @@
+[
+    {"id": 101, "name": "Placa Intel", "price": 15000},
+    {"id": 102, "name": "Monitor Zowie BenQ", "price": 900000},
+    {"id": 103, "name": "Memoria ram Aorus", "price": 5000},
+    {"id": 104, "name": "Silla Gamer", "price": 22000},
+    {"id": 105, "name": "Mother Geforce", "price": 12000},
+    {"id": 106, "name": "Notebook Lenovo Legion 5 Core i5 8Gb", "price": 95500}
+    
+]

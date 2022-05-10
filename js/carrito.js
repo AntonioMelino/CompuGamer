@@ -85,3 +85,6 @@ let userLS = localStorage.getItem('user')
 
 user= userLS ? console.log('Loged') : user = prompt ('Ingrese user')
 localStorage.setItem('user',user)
+
+
+
