@@ -1,9 +1,38 @@
-[
-    {"id": 101, "name": "Placa Intel", "price": 15000},
-    {"id": 102, "name": "Monitor Zowie BenQ", "price": 900000},
-    {"id": 103, "name": "Memoria ram Aorus", "price": 5000},
-    {"id": 104, "name": "Silla Gamer", "price": 22000},
-    {"id": 105, "name": "Mother Geforce", "price": 12000},
-    {"id": 106, "name": "Notebook Lenovo Legion 5 Core i5 8Gb", "price": 95500}
-    
+[{
+    "id": 101,
+    "name": "Parlantes Genius 220v",
+    "price": 15000,
+    "img": "https://lezamapc.com.ar/22675-large_default/parlantes-genius-sp-hf1800a-ii-220v.jpg"
+},
+{
+    "id": 102,
+    "name": "Webcam Razer kiyo X",
+    "price": 900000,
+    "img": "https://app.contabilium.com/files/explorer/16752/Productos-Servicios/concepto-4162714.jpg"
+},
+{
+    "id": 103,
+    "name": "Impresora multifuncion HP smart tank 750 wifi",
+    "price": 5000,
+    "img": "https://ar-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/U/6UU47A-2_T1638283527.png"
+},
+{
+    "id": 104,
+    "name": "Fuente Evga 1000 GQ Gold",
+    "price": 22000,
+    "img": "https://cyccomputer.pe/38564-home_default/fuente-evga-1000-gq-80-plus-gold-semi-modular-pn210-gq-1000-v1.jpg"
+},
+{
+    "id": 105,
+    "name": "Joystick Sony Playstation 5 Blanco",
+    "price": 12000,
+    "img": "https://images.fravega.com/f500/9e59c3d7092f6b7b753574612c65289d.jpg"
+},
+{
+    "id": 106,
+    "name": "Notebook Lenovo Legion 5 Core i5 8Gb",
+    "price": 95500,
+    "img": "https://www.computershopping.com.ar/Images/Productos/82AU00B0AR_Foto0.jpg"
+}
+
 ]

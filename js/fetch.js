@@ -11,7 +11,6 @@ fetch('/data.json')
             <div class='col card'>
                     <h4>${product.name}</h4>
                     <p>$ ${product.price}</p>
-                    <p>Code: ${product.id}</p>
                     <img src='${product.img}' height= '350px'/>
                     <button class= 'btnAddCart' id='product-${product.id}'>Agregar al carrito</button>
                     <button class= 'btnRemoveCart' id='product-${product.id}'>Remover del carrito</button>
